@@ -1,0 +1,29 @@
+.jumbotron {
+  padding-top: 6rem;
+  background-color: #00ff9d;
+}
+
+#project {
+  background-color: #00ff9d;
+}
+
+.aboutme {
+  padding-top: 5rem;
+}
+
+.projectme {
+  padding-top: 5rem;
+}
+
+/* judul besar */
+.textabout {
+  font-style: oblique;
+}
+
+.textproject {
+  font-style: oblique;
+}
+
+.textcontact {
+  font-style: oblique;
+}
