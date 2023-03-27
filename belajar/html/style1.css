@@ -1,3 +1,11 @@
+body {
+  min-height: 2000px;
+}
+
+#home {
+  background-color: #7fff00;
+}
+
 .jumbotron {
   padding-top: 5rem;
   background-color: #00ff9d;
@@ -8,5 +16,10 @@
 }
 
 .accordion {
+  background-color: #00ff9d;
   padding-top: 2rem;
+}
+
+.card-body {
+  justify-content: center;
 }
