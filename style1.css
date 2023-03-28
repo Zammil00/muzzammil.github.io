@@ -1,0 +1,25 @@
+#home {
+  background-color: #198754;
+}
+
+.card {
+  padding-top: 5rem;
+  background-color: rgb(89, 255, 139);
+}
+
+.row {
+  padding-top: 1rem;
+}
+
+.scrollspy-example {
+  background-color: #014133;
+  height: 100dvh;
+}
+
+.h4-judul {
+  padding-top: 2rem;
+}
+
+.p-isi {
+  padding-top: 1rem;
+}
