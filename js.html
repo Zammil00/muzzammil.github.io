@@ -14,18 +14,17 @@
     />
 
     <!-- BOOSTRAP ICON -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
     <!-- MY CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
 
     <title>PORTOFOLIO | ALMUZZAMMIL</title>
   </head>
 
   <body id="home">
+
     <!-- NAVBAR STAR -->
     <nav
       class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top"
@@ -47,28 +46,135 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a
-                class="nav-link active fw-bold"
-                aria-current="page"
-                href="#home"
-                >HOME</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active fw-bold" href="#about">TENTANG SAYA</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active fw-bold" href="#project"
-                >BELAJAR BARENG</a
-              >
+              <a class="nav-link active fw-bold" href="#project">MULAI BELAJAR</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active fw-bold" href="#contact">KONTAK SAYA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active fw-bold" aria-current="page" href="index.html">KEMBALI</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <!-- NAVBAR END -->
+
+    <!-- JUMBOTRON -->
+    <section class="jumbotron text-center pb-3">
+      <img
+        src="img/poto-2.jpg "
+        alt="AL MUZZAMMIL"
+        width="200"
+        height="200"
+        class="rounded-circle img-thumbnail"
+      />
+      <h1 class="display-3 fw-bold">AL MUZZAMMIL</h1>
+      <p class="lead fw-bold">MATERI PEMBELAJARAN HTML DASAR UNTUK PEMULA</p>
+      <p class="lead fw-bold">
+        <a class="nav-link text-white fw-bold" href="https://umuslim.ac.id/"><i class="bi bi-mortarboard-fill"></i> AL-MUSLIM</a>
+      </p>
+      <p class="lead fw-bold">
+        <a class="nav-link" href="https://instagram.com/ini_labil?igshid=YmMyMTA2M2Y="><i class="bi bi-instagram text-white"></i></a>
+        <a class="nav-link" href="https://instagram.com/ini_labil?igshid=YmMyMTA2M2Y="><i class="bi bi-facebook text-white"></i></a>
+        <a class="nav-link" href="https://wa.me/qr/M4SU65MTHKSGK1"><i class="bi bi-whatsapp text-white"></i></a>
+      </p>
+      <P class="lead fw-bold">LANJUT SCROLL</P>
+    </section>
+    <!-- JUMBOTRON -->
+
+
+    <!-- PROJECT STAR -->
+    <section id="project">
+    <div class="projectme">
+      <div class="container">
+        <div class="row text-center mb-4">
+          <div class="col">
+            <h2 class="textproject fw-bold fs-1">JAVASCRIPT DASAR </h2>
+          </div>
+        </div>
+        <!-- PROJECT 1 -->
+        <div class="row justify-content-center">
+          <div class="col-md-12 mb-6">
+            <div class="card"> 
+              <div class="card-body">
+                <div class="p-2 bg-dark border text-white">
+                    <!-- PELAJARAN 1 -->
+                    <h4 class="h4-judul fs-3 fw-bold text-center" id="list-item-1">
+                      A. PENGENALAN JAVASCRIPT DASAR PEMULA
+                    </h4>
+                    <p class="p-isi">
+                      HTML memang bahasa yang wajib dipelajari, bagi yang mau
+                      menjadi web developer. Karena… HTML merupakan bahasa dasar
+                      untuk membuat web. Saya yakin, kamu sudah pernah mendengar
+                      HTML sebelumnya. Tapi tidak ada salahnya membaca kebali
+                      artikel ini. Pada tutorial ini, kita akan benar-benar
+                      membahas dari nol hingga kamu bisa membuat halaman HTML
+                      sendiri. Baiklah… Mari kita mulai!
+                    </p>
+                    <p class="p-isi">
+                      <!-- TOPIK 1 -->
+                      <p class="h3-isi fs-3 fw-bold">1. APA ITU HTML ?</p>
+                      <p>Mari kita lihat pengertian HTML menurut
+                      wikipedia: HTML atau HyperText Markup Language merupakan
+                      sebuah bahasa markah untuk membuat halaman web. Paham kan
+                      maksudnya? Kalau belum paham, sini saya jelaskan… 
+                      </p>
+                  </div>
+                <p class="card-text">
+                  Hypertext Markup Language (HTML) adalah bahasa markah standar
+                  untuk dokumen yang dirancang untuk ditampilkan di peramban internet.
+                  Ini dapat dibantu oleh teknologi seperti Cascading Style Sheets (CSS)
+                  dan bahasa skrip lainnya seperti JavaScript, VBScript, dan PHP.
+                  Logo resmi dari versi terbaru, HTML5.
+                </p>
+              </div>
+            </div>
+          </div>
+    <!-- project end -->
+
+    <!-- CONTACT STAR -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center mb-3">
+            <h2 class="textcontact fw-bold">CONTACT ME</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">NAMA LENGKAP</label>
+                <input type="text" class="form-control" id="name" aria-describedby="name">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">EMAIL ANDA</label>
+                <input type="email" class="form-control" id="email" aria-describedby="email">
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="form-label">PESAN ANDA</label>
+                <textarea class="form-control" id="pesan" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary mb-5">KIRIM</button>
+            </form>
+        </div>
+    </section>
+    <!-- CONTACT END -->
+
+    <!-- FOOTER STAR -->
+    <footer class="bg-success text-white text-center p-2">
+      <p class="justify-content-center">Created With <i class="bi bi-arrow-through-heart text-danger"></i> By <a href="https://instagram.com/ini_labil?igshid=YmMyMTA2M2Y=" class="
+        text-white fw-bold">
+        TENGKU IJO</a></p>
+    </footer>
+    <!-- FOOTER END -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
