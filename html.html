@@ -49,7 +49,7 @@
               <a class="nav-link active fw-bold" href="index.html">HOME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active fw-bold" href="#project">MULAI BELAJAR</a>
+              <a class="nav-link active fw-bold" href="#daftar-pustaka">MULAI BELAJAR</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active fw-bold" href="#contact">KONTAK SAYA</a>
@@ -87,7 +87,7 @@
     <!-- JUMBOTRON -->
 
     <!-- DAFTAR ISI STAR -->
-    <section class="container-daftar-isi">
+    <section class="container-daftar-isi" id="daftar-pustaka">
       <div class="col-md-12 mb-6">
         <table class="table table table-bordered border-primary justify-content-center" id="daftar-isi">
           <thead class="table-success" id="daftar-isi">
@@ -101,17 +101,17 @@
             <tr class="table-Secondary">
               <th scope="row">1</th>
               <td>PENGENALAN HTML DASAR</td>
-              <td>KLIK DISINI</td>
+              <td><a href="#list-item-1">KLIK DISINI</a></td>
             </tr>
             <tr>
               <th scope="row">2</th>
               <td>MENGENAL TAG, ELEMEN DAN ATRIBUT HTML</td>
-              <td>KLIK DISINI</td>
+              <td><a href="#list-item-2">KLIK DISINI</a></td>
             </tr>
             <tr>
               <th scope="row">3</th>
-              <td>PERKEMBANGAN DAN VERSI HTML</td>
-              <td>KLIK DISINI</td>
+              <td>MEMBUAT PARAGRAF DI HTML</td>
+              <td><a href="#">KLIK DISINI</a></td>
             </tr>
           </tbody>
         </table>
@@ -357,14 +357,103 @@
                       <P>Ini adalah tag deklarasi untuk menyatakan tipe dokumen dan versinya. Pada contoh di atas, kita menyatakan dokumen ini bertipe HTML dan versinya adalah HTML 5.</P>
                       <P>Nah, untuk HTML versi 4.. beda lagi cara deklarasinya.</P>
                       <P>Contoh untuk HTML 4.01:</P>
-                      <pre>
-                        <code style="color: #ff79c6;">&lt;p&gt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&lt;/p&gt;</code>
-                      </pre>
+                      <P>
+                        <div class="card text-white bg-success mb-3" style="max-width: 75rem;">
+                          <div class="card-body">
+                            <code style="color: #ffd48e;">&lt;p&gt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&lt;/p&gt;</code>
+                          </div>
+                        </div>
+                      </P>
                       <p>Cukup panjang bukan..</p>
                       <p>Lalu apakah boleh kita tidak menulis kode
                         <code>&lt;!DOCTYPE html&gt;</code>ini?
                       </p>
-                      <p class="fw-bold fs-5">2. BAGIAN DEKLARASI</p>
+                      <P>Boleh-boleh saja.. dokumen HTML-nya akan tetap bisa dibuka di web browser.
+                        Tapi, ini tentunya akan melanggar aturan standar yang dibuat W3C.
+                      </P>
+                      <P>Oya, kita bisa mengecek.. apakah HTML yang ditulis sudah benar atau tidak di
+                        <a href="https://validator.w3.org/">https://validator.w3.org/.</a>
+                      </P>
+                      <img src="belajar/html/html-validator.png" class="img-fluid rounded mx-auto d-block pb-4" alt="html-validator">
+                      <P>Lanjut…</P>
+                      <P>Berikutnya, di bawah tag deklarasi
+                        <code>&lt;!DOCTYPE html&gt;</code>terdapat tag pembuka untuk HTML:
+                      </P>
+                      <P>
+                        <div class="card text-white bg-success mb-3" style="max-width: 13rem;">
+                          <div class="card-body">
+                            <code style="color: #ffd48e;">&lt;p&gt;html lang="en"&lt;/p&gt;</code>
+                          </div>
+                        </div>
+                      </P>
+                      <P>Tag
+                        <code>&lt;html&gt;</code> wajib ada di setiap dokumen HTML..
+                      </P>
+                      <P>Pada tag ini, kita memberikan atribut
+                        <code>&lt;lang="en"&gt;</code>untuk menyatakan kalau konten dokumen HTML ini akan menggunakan bahasa inggris.
+                      </P>
+                      <P>Nah di dalam tag
+                        <code>&lt;html&gt;</code>
+                        ini, terdapat dua tag penting lagi.. yakni: tag
+                        <code>&lt;head&gt;</code>dan tag
+                        <code>&lt;body&gt;</code>.
+                      </P>
+                      <P>Setelah itu barulah terakhir tag HTML ditutup dengan <code>&lt;/html&gt;</code>.</P>
+
+                      <p class="fw-bold fs-5">2. BAGIAN HEAD</p>
+                      <P>Bagian HEAD adalah bagian kepala dari HTML. Dimulai dari tag <code>&lt;head&gt;</code>
+                        dan ditutup dengan <code>&lt;/head&gt;</code>.
+                      </P>
+                      <div class="highlight rounded mx-auto d-block pb-4">
+                        <pre tabindex="0" style="max-width: 26rem; color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2">
+                          <code class="language-html" data-lang="html"><span style="display:flex"><span><span style="color:#ff79c6">&lt;!DOCTYPE html&gt;</span>
+                      </span></span><span style="display:flex"><span>&lt;<span style="color:#ff79c6">html</span> <span style="color:#50fa7b">lang</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">"en"</span>&gt;
+                      </span></span><span style="display:flex"><span>    &lt;<span style="color:#ff79c6">head</span>&gt;
+                      </span></span><span style="display:flex"><span>        &lt;<span style="color:#ff79c6">title</span>&gt;Belajar HTML #01&lt;/<span style="color:#ff79c6">title</span>&gt;
+                      </span></span><span style="display:flex"><span>    &lt;/<span style="color:#ff79c6">head</span>&gt;                      
+                      </span></span><span style="display:flex"><span>    &lt;<span style="color:#ff79c6">body</span>&gt;
+                      </span></span><span style="display:flex"><span>        &lt;<span style="color:#ff79c6">p</span>&gt;Hello World!&lt;/<span style="color:#ff79c6">p</span>&gt;
+                      </span></span><span style="display:flex"><span>    &lt;/<span style="color:#ff79c6">body</span>&gt;
+                      </span></span><span style="display:flex"><span>&lt;/<span style="color:#ff79c6">html</span>&gt;</span></span>
+                          </code>                    
+                        </pre>
+                      </div>
+                      <P>Pada bagian HEAD, biasanya digunakan untuk menuliskan tag-tag yang akan dibaca oleh mesin.</P>
+                      <P>SEPERTI :
+                        <div>
+                          <ul>
+                            <li>Tag meta untuk SEO;</li>
+                            <li>Tag <code>&lt;title&gt;</code>untuk judul;</li>
+                            <li>Tempat menulis kode CSS dan Javascript;</li>
+                            <li>dan lain-lain.</li>
+                          </ul>
+                        </div>
+                      </P>
+                      <p class="fw-bold fs-5">3. BAGIAN BODY</p>
+                      <P>Bagian BODY adalah bagian yang akan ditampilkan pada web browser. Penulisannya di mulai dari tag <code>&lt;body&gt;</code>
+                        dan ditutup dengan <code>&lt;/body&gt;</code>.
+                      </P>
+                      <div class="highlight rounded mx-auto d-block pb-4">
+                        <pre tabindex="0" style="max-width: 26rem; color:#f8f8f2;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2">
+                          <code class="language-html" data-lang="html"><span style="display:flex"><span><span style="color:#ff79c6">&lt;!DOCTYPE html&gt;</span>
+                      </span></span><span style="display:flex"><span>&lt;<span style="color:#ff79c6">html</span> <span style="color:#50fa7b">lang</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">"en"</span>&gt;
+                      </span></span><span style="display:flex"><span>    &lt;<span style="color:#ff79c6">head</span>&gt;
+                      </span></span><span style="display:flex"><span>        &lt;<span style="color:#ff79c6">title</span>&gt;Belajar HTML #01&lt;/<span style="color:#ff79c6">title</span>&gt;
+                      </span></span><span style="display:flex"><span>    &lt;/<span style="color:#ff79c6">head</span>&gt;                      
+                      </span></span><span style="display:flex"><span>    &lt;<span style="color:#ff79c6">body</span>&gt;
+                      </span></span><span style="display:flex"><span>        &lt;<span style="color:#ff79c6">p</span>&gt;Hello World!&lt;/<span style="color:#ff79c6">p</span>&gt;
+                      </span></span><span style="display:flex"><span>    &lt;/<span style="color:#ff79c6">body</span>&gt;
+                      </span></span><span style="display:flex"><span>&lt;/<span style="color:#ff79c6">html</span>&gt;</span></span>
+                          </code>                    
+                        </pre>
+                      </div>
+                      <P>Di sinilah nanti kita akan banyak menuliskan konten dengan berbagai macam tag. Saat ini kita baru mengisinya dengan tag
+                        <code>&lt;p&gt;</code>.
+                      </P>
+                      <P> 
+                        Tag <code>&lt;p&gt;</code> adalah tag yang digunakan untuk membuat paragraf.
+                      </P>
+
                     </p>
 
 
@@ -374,9 +463,8 @@
                     </h4>
                     <p class="p-isi">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-
                   </div>
-                <p class="card-text">
+                <p>
                   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
                 </p>
               </div>
