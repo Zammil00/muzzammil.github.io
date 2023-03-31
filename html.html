@@ -101,17 +101,17 @@
           <tbody>
             <tr class="table-Secondary">
               <th scope="row">1</th>
-              <td>PENGENALAN HTML DASAR</td>
+              <td class="text fw-bold fs-5">PENGENALAN HTML DASAR</td>
               <td><a href="#list-item-1">KLIK DISINI</a></td>
             </tr>
             <tr>
               <th scope="row">2</th>
-              <td>MENGENAL TAG, ELEMEN DAN ATRIBUT HTML</td>
+              <td class="text fw-bold fs-5">MENGENAL TAG, ELEMEN DAN ATRIBUT HTML</td>
               <td><a href="#list-item-2">KLIK DISINI</a></td>
             </tr>
             <tr>
               <th scope="row">3</th>
-              <td>MEMBUAT PARAGRAF DI HTML</td>
+              <td class="text fw-bold fs-5">MEMBUAT PARAGRAF DI HTML</td>
               <td><a href="#">KLIK DISINI</a></td>
             </tr>
           </tbody>
@@ -475,6 +475,95 @@
                           </ul>
                         </div>
                       </P>
+                      <!-- TOPIK 1 -->
+                      <p class="h3-isi fs-3 fw-bold">1. APA ITU TAG ?</p>
+                      <p>Tag adalah sebuah penanda <strong>Awalan</strong> dan <strong>Akhiran</strong> dari sebuah <strong>Elemen</strong> di HTML.</p>
+                      <p>Tag dibuat dengan kurung siku (<strong>< ... ></strong>), lalu di dalamnya berisi nama tag dan kadang juga ditambahkan dengan atribut.</p>
+                      <P>Contoh:
+                        <code>&lt;p&gt;</code>,
+                        <code>&lt;a&gt;</code>,
+                        <code>&lt;body&gt;</code>,
+                        <code>&lt;head&gt;</code>, dan sebagainya.
+                      </p>
+                      <P>Tag selalu ditulis berpasangan. Ada tag pembuka dan ada tag penutupnya.
+                        Namun, ada juga beberapa tag yang tidak memiliki pasangan penutup.
+                        Tag penutup ditulis dengan menambahkan garis miring (/) di depan nama tag.
+                      </P>
+                      <img src="belajar/html/pelajaran-2/tag.png" class="img-fluid rounded mx-auto d-block pb-4" alt="tag">
+                      <P>Setiap tag memiliki fungsi masing-masing. Ada yang digunakan untuk membuat judul, membuat link, membuat paragraf, heading, dan lain-lain.</P>
+                      <P>Masih ingat sejarah HTML?</P>
+                      <P>Dulu.. awalnya HTML cuma punya 18 tag. Sekarang HTML sudah punya sekitar 250 tag.</P>
+                      <P>Wah! banyak ya.</P>
+                      <P>Apa semua tag ini harus kita hafal ?</P>
+                      <P>Jawabannya:</P>
+                      <P><strong>Tidak harus</strong>, saja juga tidak bisa menghafal semanya. Cukup ketahui tag-tag dasar saja.</P>
+                      <P>Berikut ini daftar tag-tag dasar, yang menurut saya harus kamu ingat.</P>
+                      <table class="table table-info text-dark">
+                        <thead>
+                          <tr class="text fw-bold fs-3">
+                            <th scope="col">NO</th>
+                            <th scope="col">TAG</th>
+                            <th scope="col">FUNGSI</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td class="text fw-bold fs-4"><code>&lt;html&gt;</code></td>
+                            <td class="text fw-bold fs-5">untuk memulai dokumen HTML</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td class="text fw-bold fs-4"><code>&lt;head&gt;</code></td>
+                            <td class="text fw-bold fs-5">untuk membuat bagian head</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td class="text fw-bold fs-4"><code>&lt;body&gt;</code></td>
+                            <td class="text fw-bold fs-5">untuk membuat bagian body</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td class="text fw-bold fs-4"><code>&lt;h1&gt;</code>  sampai <code>&lt;h6&gt;</code></td>
+                            <td class="text fw-bold fs-5">untuk membuat heading pada artikel</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">5</th>
+                            <td class="text fw-bold fs-4"><code>&lt;p&gt;</code></td>
+                            <td class="text fw-bold fs-5">untuk membuat paragraf</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">5</th>
+                            <td class="text fw-bold fs-4"><code>&lt;!-- --!&gt;</code></td>
+                            <td class="text fw-bold fs-5">untuk membuat komentar</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <P>Beberapa tag ini sudah kita coba pada tutorial pertama dan juga ada yang belum.</P>
+                      <p>Tenang saja.. Nanti juga saya akan perkenalkan tag-tag lain yang umum digunakan dalam pembuatan web.</p>
+                      <p>
+                        <ul>
+                          <li class="fw-bold fs-5">CARA MENULIS HTML DENGAN BENAR</li>
+                        </ul>
+                      </p>
+                      <P>Beberapa orang kadang sering salah dalam menuliskan tag.
+                         Ada yang lupa menutup, ada yang salah mengetik namanya, dan semacamnya.
+                        Berikut ini beberapa saran yang perlu diikuti agar bisa menulis tag dengan benar:
+                      </P>
+                      <p class="fw-bold fs-6">1. Tag-tag wajib</p>
+                      <P>Ada beberapa tag yang wajib ada di HTML.
+                        Tag ini harus kamu tulis.. kalau tidak, bisa jadi kode HTML-mu akan error menurut validator W3C.
+                      </P>
+                      <P>Berikut ini daftar tag yang wajib ada di HTML:</P>
+                      <P>
+                        <ul>
+                          <li><code>&lt;!DOCTYPE html&gt;</code> -> untuk deklarasi type dokumen;</li>
+                          <li><code>&lt;html&gt;</code> -> tag utama dalam HTML;</li>
+                          <li><code>&lt;head&gt;</code> -> untuk bagian kepala dari dokumen;</li>
+                          <li><code>&lt;title&gt;</code> -> untuk judul web;</li>
+                          <li><code>&lt;body&gt;</code> -> untuk bagian body dari dokumen.</li>
+                        </ul>
+                      </P>              
                 </div>
                 <p>
                   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
