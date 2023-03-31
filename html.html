@@ -563,7 +563,50 @@
                           <li><code>&lt;title&gt;</code> -> untuk judul web;</li>
                           <li><code>&lt;body&gt;</code> -> untuk bagian body dari dokumen.</li>
                         </ul>
-                      </P>              
+                      </P>
+                      <p class="fw-bold fs-6">2. Gunakan Huruf Kecil</p>
+                      <P>Hindari menggunakan huruf besar dalam menuliskan naama tag dan sebaiknya gunakan huruf kecil saja.</P>
+                      <P>Huruf kecil lebih gampang diketik dan juga akan membuat kode HTML terlihat lebih bersih dan rapi.</P>
+                      <P>Contoh: (bagus)</P>
+                      <P>
+                        <div class="card text-white bg-success mb-3" style="max-width: 75rem;">
+                          <div class="card-body">
+                            <P><code style="color: #ffd48e;">&lt;body&gt;</code></P>
+                            <p><code style="color: #ffd48e;">&lt;p&gt;BELAJAR TAG HTML BERSAMA AL MUZZAMMIL&lt;/p&gt;</code></p>
+                            <P><code style="color: #ffd48e;">&lt;body&gt;</code></P>
+                          </div>
+                        </div>
+                      </P>
+                      <P>Contoh: (buruk)</P>
+                      <P>
+                        <div class="card text-white bg-success mb-3" style="max-width: 75rem;">
+                          <div class="card-body">
+                            <P><code style="color: #ffd48e;">&lt;BODY&gt;</code></P>
+                            <p><code style="color: #ffd48e;">&lt;p&gt;BELAJAR TAG HTML BERSAMA AL MUZZAMMIL&lt;/p&gt;</code></p>
+                            <P><code style="color: #ffd48e;">&lt;BODY&gt;</code></P>
+                          </div>
+                        </div>
+                      </P>
+                      <p>Tapi khusus untuk tag <code>&lt;!DOCTYPE html&gt;</code>... ia ditulis dengan huruf besar. Sebenarnya bisa juga dengan huruf kecil dan akan valid menurut validator W3C.</p>
+                      <p>Tapi untuk dokumen <strong>XHTML</strong>, menggunakan <strong>DOCTYPE</strong>  dengan huruf kecil akan mengakibatkan error.</p>
+                      <p class="fw-bold fs-6">3. Pastikan Menutup Tag dengan Benar</p>
+                      <p>Tag HTML nantinya akan ditulis bertumpuk-tumpuk. Artinya, di dalam tag ada tag lagi. Kadang kita sering salah dalam menutup tag yang bertumpuk ini. Akibatnya, kode HTML kita tidak valid.</p>
+                      <p>Tapi tenang saja.. saya punya resep agar kamu mudah mengingatnya:</p>
+                      <img src="belajar/html/pelajaran-2/tag-benar.png" class="img-fluid rounded mx-auto d-block pb-4" alt="tag-benar">
+                      <p>Jika kamu paham maksud dari jokes di atas, maka bagus.. saya tidak perlu jelaskan lagi.</p>
+                      <p>Tapi kalau belum paham, berikut ini penjelasannya:</p>
+                      <p>Tag yang pertama dibuat, harus ditutup terakhir. Bukan ditutup pertama.</p>
+                      <p>
+                        <strong>Contoh:</strong>
+                      </p>
+                      <P>
+                        <div class="card text-white bg-success mb-3" style="max-width: 75rem;">
+                          <div class="card-body">
+                            <P><code style="color: #ffd48e;">&lt;i&gt;&lt;b&gt;&lt;u&gt;BELAJAR&lt;u&gt;&lt;b&gt;&lt;i&gt;</code></P>
+                          </div>
+                        </div>
+                      </P>
+                      <i><b><u>memasak</u></b></i>
                 </div>
                 <p>
                   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -573,40 +616,69 @@
           </div>
     <!-- project end -->
 
-    <!-- CONTACT STAR -->
-    <section id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col text-center mb-3">
-            <h2 class="textcontact fw-bold">CONTACT ME</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-6">
-            <form>
-              <div class="mb-3">
-                <label for="name" class="form-label">NAMA LENGKAP</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name">
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">EMAIL ANDA</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email">
-              </div>
-              <div class="mb-3">
-                <label for="pesan" class="form-label">PESAN ANDA</label>
-                <textarea class="form-control" id="pesan" rows="3"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary mb-5">KIRIM</button>
-            </form>
-        </div>
+    <!-- CONTACT 2 STAR -->
+    <section>
+      <div class="container-2">
+        <form id="contact" action="" method="post">
+          <h3 class="text-center fw-bold">KONTAK SAYA</h3>
+          <fieldset>
+            <input
+              placeholder="NAMA KAMU"
+              type="text"
+              tabindex="1"
+              required
+              autofocus
+            />
+          </fieldset>
+          <fieldset>
+            <input
+              placeholder="EMAIL KAMU"
+              type="email"
+              tabindex="2"
+              required
+            />
+          </fieldset>
+          <fieldset>
+            <input
+              placeholder="NO HP/WA KAMU"
+              type="tel"
+              tabindex="3"
+              required
+            />
+          </fieldset>
+          <fieldset>
+            <textarea
+              placeholder="PESAN DARI KAMU UNTUK KU HEHE...."
+              tabindex="5"
+              required
+            ></textarea>
+          </fieldset>
+          <fieldset>
+            <button
+              name="submit"
+              type="submit"
+              id="contact-submit"
+              data-submit="...Sending"
+            >
+              Submit
+            </button>
+          </fieldset>
+        </form>
+      </div>
     </section>
-    <!-- CONTACT END -->
+    <!-- CONTACT 2 END -->
 
     <!-- FOOTER STAR -->
     <footer class="bg-success text-white text-center p-2">
-      <p class="justify-content-center">Created With <i class="bi bi-arrow-through-heart text-danger"></i> By <a href="https://instagram.com/ini_labil?igshid=YmMyMTA2M2Y=" class="
-        text-white fw-bold">
-        TENGKU IJO</a></p>
+      <p class="justify-content-center">
+        Created With <i class="bi bi-heartbreak text-danger"></i> By
+        <a
+          href="https://instagram.com/ini_labil?igshid=YmMyMTA2M2Y="
+          class="text-white fw-bold"
+        >
+          TENGKU IJO</a
+        >
+      </p>
     </footer>
     <!-- FOOTER END -->
 
