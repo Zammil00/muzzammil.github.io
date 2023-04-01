@@ -569,17 +569,17 @@
                       <P>Huruf kecil lebih gampang diketik dan juga akan membuat kode HTML terlihat lebih bersih dan rapi.</P>
                       <P>Contoh: (bagus)</P>
                       <P>
-                        <div class="card text-white bg-success mb-3" style="max-width: 75rem;">
+                        <div class="card text-white bg-success mb-3" style="max-width: 30rem;">
                           <div class="card-body">
-                            <P><code style="color: #ffd48e;">&lt;body&gt;</code></P>
-                            <p><code style="color: #ffd48e;">&lt;p&gt;BELAJAR TAG HTML BERSAMA AL MUZZAMMIL&lt;/p&gt;</code></p>
-                            <P><code style="color: #ffd48e;">&lt;body&gt;</code></P>
+                            <P><code>&lt;body&gt;</code></P>
+                            <p><code style="color: #083eff;">&lt;p&gt;</code>BELAJAR TAG HTML BERSAMA AL MUZZAMMIL<code style="color: #083eff;">&lt;/p&gt;</code></p>
+                            <P><code>&lt;body&gt;</code></P>
                           </div>
                         </div>
                       </P>
                       <P>Contoh: (buruk)</P>
                       <P>
-                        <div class="card text-white bg-success mb-3" style="max-width: 75rem;">
+                        <div class="card text-white bg-success mb-3" style="max-width: 30rem;">
                           <div class="card-body">
                             <P><code style="color: #ffd48e;">&lt;BODY&gt;</code></P>
                             <p><code style="color: #ffd48e;">&lt;p&gt;BELAJAR TAG HTML BERSAMA AL MUZZAMMIL&lt;/p&gt;</code></p>
@@ -616,6 +616,69 @@
                     <P>Pada diagram tersebut, terdapat tiga macam node.. yakni: Node elemen, Node atribut, dan Node teks.</P>
                     <P>Elemen dibentuk dari tag pembuka, isi tag, dan tag penutup. Kadang juga ditambahkan beberapa atribut.</P>
                     <P><strong>Contoh:</strong></P>
+                    <img src="belajar/html/pelajaran-2/element.png" class="img-fluid rounded mx-auto d-block pb-4" alt="element">
+                    <P>Pada contoh di atas, terdapat satu elemen <code>&lt;p&gt;</code> 
+                      dengan atribut  ,<strong>align="center" </strong>dan memiliki isi berupa teks, yakni <strong>Hello World !</strong>.
+                    </p>
+                    <P>Elemen tidak selalu berisi teks, kadan ia juga akan berisi elemen lain. Ini biasanya kita sebut dengan nested element atau elemen di dalam elemen.
+                    </P>
+                    <P>Elemen HTML ada banyak jenisnya. Ada elemen khusus untuk teks, ada elemen untuk multimedia, script, tabel, metadata, dll.
+                      Nanti kita akan pelajari ini secara bertahap. Semua jenis elemen HTML bisa kamu baca di sini:
+                      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTML elements reference</a>.
+                    </P>
+                    <P>Beberapa elemen HTML kadang ditambahkan atribut sebagai pelengkap.</P>
+                    <!-- TOPIK 3 -->
+                    <p class="h3-isi fs-3 fw-bold">3. APA ITU ATRIBUT ?</p>
+                    <P>Atribut adalah kata khusus yang berada di dalam tag pembuka. Atribut juga disebut sebagai modifier yang akan menentukan perliaku dari elemen.
+                    </P>
+                    <img src="belajar/html/pelajaran-2/atribut.png" class="img-fluid rounded mx-auto d-block pb-4" alt="atribut">
+                    <P>Atribut dapat ditambahkan pada elemen manapun. Ada juga elemen yang mewajibkan menggunakan atribut seperti elemen
+                      <code>&lt;a&gt;</code>, <code>&lt;img&gt;</code>, <code>&lt;video&gt;</code>, dll.</P>
+                    <P><strong>Contoh :</strong></P>
+                    <P>
+                      <div class="card text-white bg-success mb-3" style="max-width: 26rem;">
+                        <div class="card-body">
+                          <code style="color: #ffd48e;">&lt;a href="https://muzammil.com"&gt;</code>muzammil.com<code style="color: #ffd48e;">&lt;/a&gt;</code>
+                        </div>
+                      </div>
+                    </P>
+                    <P>Tag <code>&lt;a&gt;</code> adalah tag untuk membuat link. Tag ini mewajibkan menambahkan <code>atribut href=" "</code> untuk menyatakan halaman tujuan dari link.
+                    </P>
+                    <P>Jumlah atribut pada elemen bisa lebih dari satu.</P>
+                    <P><strong>Contoh :</strong></P>
+                    <P>
+                      <div class="card text-white bg-success mb-3" style="max-width: 27rem;">
+                        <div class="card-body">
+                          <code>
+                            &lt;img&gt;
+                            <code style="color: #50fa7b;">src</code>
+                            <code style="color: #ff79c6;">=</code><code style="color: #ffd48e;">"gambar.jpg"</code> 
+                            <code style="color: #50fa7b;">width</code>
+                            <code style="color: #ff79c6;">=</code><code style="color: #ffd48e;">"100"</code>
+                            <code style="color: #50fa7b;">height</code>
+                            <code style="color: #ff79c6;">=</code><code style="color: #ffd48e;">"100"</code>
+                            /img&gt;
+                          </code>
+                        </div>  
+                      </div>
+                    </P>
+                    <P>Atribut <strong>src</strong> adalah atribut khusus untuk tag <code>&lt;img&gt;</code>
+                      yang fungsinya untuk menentukan gambar yang akan ditampilkan.
+                      Lalu atrubut <strong>width</strong> dan <strong>height</strong> adalah atribut yang mengatur ukurannya.
+                    </P>
+                    <p>
+                      <ul>
+                        <li class="fw-bold fs-5">JENIS - JENIS ATRIBUT HTML</li>
+                      </ul>
+                    </p>
+                    <P>Tiap-tiap elemen kadang memiliki atribut khurus yang hanya bisa digunakan pada elemen tersebut. Ada juga atribut yang bersifat global dan bisa ditambahkan ke semua elemen.
+                    </P>
+                    <P>
+                      <strong>Berikut ini jenis-jenis atribut yang harus diketahui :</strong>
+                    </P>
+                    <p class="fw-bold fs-6">1. Atribut Global</p>
+                    <P>Atribut Global adalah atribut yang bisa ditambahkan pada semua elemen HTML.</P>
+                    <P>Berikut ini daftar atribut global dan fungsinya:</P>
                 </div>
                 <p>
                   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
