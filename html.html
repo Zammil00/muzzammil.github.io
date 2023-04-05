@@ -87,11 +87,11 @@
     <!-- JUMBOTRON -->
 
     <!-- DAFTAR ISI STAR -->
-    <section class="container-daftar-isi" id="daftar-pustaka">
+    <section class="container-daftar-isi card text-white bg-secondary mb-12" style="max-width: 100rem;" id="daftar-pustaka">
       <div class="col-md-12 mb-6">
-        <table class="table table table-bordered border-primary justify-content-center" id="daftar-isi">
+        <table class="table table table-bordered border-dark justify-content-center" id="daftar-isi">
           <P class="text text-center fw-bold fs-2">DAFTAR ISI PELAJARAN</P>
-          <thead class="table-success" id="daftar-isi">
+          <thead class="table-secondary" id="daftar-isi">
             <tr>
               <th scope="col-6">NO</th>
               <th scope="col-6">PELAJARAN</th>
@@ -102,17 +102,17 @@
             <tr class="table-Secondary">
               <th scope="row">1</th>
               <td class="text fw-bold fs-5">PENGENALAN HTML DASAR</td>
-              <td><a href="#list-item-1">KLIK DISINI</a></td>
+              <td><a class="text text-dark fw-bold fs-5" href="#list-item-1">KLIK DISINI</a></td>
             </tr>
             <tr>
               <th scope="row">2</th>
               <td class="text fw-bold fs-5">MENGENAL TAG, ELEMEN DAN ATRIBUT HTML</td>
-              <td><a href="#list-item-2">KLIK DISINI</a></td>
+              <td><a class="text text-dark fw-bold fs-5" href="#list-item-2">KLIK DISINI</a></td>
             </tr>
             <tr>
               <th scope="row">3</th>
               <td class="text fw-bold fs-5">MEMBUAT PARAGRAF DI HTML</td>
-              <td><a href="#">KLIK DISINI</a></td>
+              <td><a class="text text-dark fw-bold fs-5" href="#">KLIK DISINI</a></td>
             </tr>
           </tbody>
         </table>
@@ -922,6 +922,37 @@
                     </P>
                     <P>Namun, ada beberapa hal yang perlu diperhatikan agar penilisannya benar dan valid:</P>
                     <p class="fw-bold fs-6">1. Gunakan Huruf Kecil</p>
+                    <P>Menulis atribut dengan huruf besar sah-sah saja, dan bahkan valid menurut validator W3C.</P>
+                    <P>Tapi saya sarankan menggunakan huruf kecil saja. Karena lebih umum digunakan dan juga mudah terbaca.</P>
+                    <P> <strong>Contoh:</strong> (bagus)</P>
+                    <P>
+                      <div class="card text-white bg-success mb-3" style="max-width: 28rem;">
+                        <div class="card-body">
+                          <code>
+                            &lt;p
+                            <code style="color: #50fa7b;">align</code>
+                            <code style="color: #ff79c6;">=</code><code style="color: #ffd48e;">"center"</code>&gt;</code>Belajar HTML Dengan Muzammil<code>&lt;/p&gt;</code>
+                        </div>  
+                      </div>
+                    </P>
+                    <P> <strong>Contoh:</strong> (kurang bagus)</P>
+                    <P>
+                      <div class="card text-white bg-success mb-3" style="max-width: 28rem;">
+                        <div class="card-body">
+                          <code>
+                            &lt;p
+                            <code style="color: #50fa7b;">ALIGN</code>
+                            <code style="color: #ff79c6;">=</code><code style="color: #ffd48e;">"CENTER"</code>&gt;</code>Belajar HTML Dengan Muzammil<code>&lt;/p&gt;</code>
+                        </div>  
+                      </div>
+                    </P>
+                    <p class="fw-bold fs-6">2. Gunakan Tanda Petik</p>
+                    <P>Gunkan tanda petik untuk mengisi nilai atribut yang mengandung teks.</P>
+                    <P>
+                      <strong>Mengapa?</strong>
+                    </P>
+                    <P>Karena jika terdapat lebih dari satu kata, ia akan menciptakan spasi dan akan dianggap sebagai atribut baru.</P>
+                    <P> <strong>Contoh:</strong> (bagus)</P>
                 </div>
                 <p>
                   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
