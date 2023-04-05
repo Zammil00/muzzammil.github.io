@@ -1,3 +1,7 @@
+body {
+  background-color: #2f4f4f;
+}
+
 .jumbotron {
   padding-top: 6rem;
   background-color: #00ff9d;
@@ -9,6 +13,11 @@
 
 .aboutme {
   padding-top: 5rem;
+  background-color: #2f4f4f;
+}
+
+.about22 {
+  background-color: #2f4f4f;
 }
 
 .projectme {
@@ -17,6 +26,7 @@
 
 /* judul besar */
 .textabout {
+  color: #fff;
   font-style: oblique;
 }
 
@@ -33,10 +43,15 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
 
 .container-2 {
+  background-color: #2f4f4f;
   max-width: 400px;
   width: 100%;
   margin: 0 auto;
   position: relative;
+}
+
+.contactbg {
+  background-color: #2f4f4f;
 }
 
 #contact input[type="text"],
@@ -102,7 +117,7 @@ fieldset {
   -webkit-transition: border-color 0.3s ease-in-out;
   -moz-transition: border-color 0.3s ease-in-out;
   transition: border-color 0.3s ease-in-out;
-  border: 1px solid #aaa;
+  border: 1px solid #2f4f4f;
 }
 
 #contact textarea {
@@ -115,8 +130,8 @@ fieldset {
   cursor: pointer;
   width: 100%;
   border: none;
-  background: #0cf;
-  color: #fff;
+  background: #2f4f4f;
+  color: #ffffff;
   margin: 0 0 5px;
   padding: 10px;
   font-size: 15px;
@@ -136,17 +151,17 @@ fieldset {
 #contact input:focus,
 #contact textarea:focus {
   outline: 0;
-  border: 1px solid #999;
+  border: 2px solid #2f4f4f;
 }
 ::-webkit-input-placeholder {
-  color: #888;
+  color: #2f4f4f;
 }
 :-moz-placeholder {
-  color: #888;
+  color: #2f4f4f;
 }
 ::-moz-placeholder {
-  color: #888;
+  color: #2f4f4f;
 }
 :-ms-input-placeholder {
-  color: #888;
+  color: #2f4f4f;
 }
